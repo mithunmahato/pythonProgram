@@ -27,7 +27,12 @@ network_devices = [
     "version":"17.9.20220318:182713"
   }
 ]
+"""
 print(network_devices)
 print(f"{network_devices[0]['hostname']}, {network_devices[0]['platform']}, {network_devices[0]['mgmt_ip']}, {network_devices[0]['version']}")
 print(f"{network_devices[1]['hostname']}, {network_devices[1]['platform']}, {network_devices[1]['mgmt_ip']}, {network_devices[1]['version']}")
 print(f"{network_devices[2]['hostname']}, {network_devices[2]['platform']}, {network_devices[2]['mgmt_ip']}, {network_devices[2]['version']}")
+"""
+
+for device in network_devices:
+  print(f"{device['hostname']},{device['platform']},{device['mgmt_ip']},{device['version']}")
