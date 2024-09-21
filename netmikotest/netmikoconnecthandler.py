@@ -5,13 +5,13 @@ import os
 
 ciscoDevice = {
     'device_type': 'cisco_ios',
-    'host':   '198.18.134.20',
+    'host':   '198.18.134.10',
     'username': 'cisco',
     'password': 'cisco',
 }
 with ConnectHandler(**ciscoDevice) as c:
         r1=c.send_command("sh ip int bri")
-        r2=c.send_command("sh cdp nei")
+        r2=c.send_command("sh run")
         print(r1)
         print(r2)
 
