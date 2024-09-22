@@ -1,6 +1,0 @@
-Interface              IP-Address      OK? Method Status                Protocol
-GigabitEthernet1       unassigned      YES unset  administratively down down    
-GigabitEthernet2       unassigned      YES unset  administratively down down    
-GigabitEthernet3       198.18.134.20   YES manual up                    up      
-GigabitEthernet4       unassigned      YES unset  administratively down down    
-% CDP is not enabled
