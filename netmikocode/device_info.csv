@@ -1,0 +1,4 @@
+ip_address,hostname,device_type,pod_id
+198.18.134.10,sw1.lab.local,cisco_ios,10
+198.18.134.11,sw2.lab.local,cisco_ios,20
+198.18.134.12,sw3.lab.local,cisco_ios,30
