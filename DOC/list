@@ -183,4 +183,71 @@ print(twos)
 odds = [x for x in squares if x % 2 != 0 ]
 print(odds)
 ==
+for element in list:
+    if conditional:
+        expression
+==
+board = []
 
+board = [["EMPTY" for i in range(8)] for j in range(8)]
+board[0][0] = "ROOK"
+board[0][7] = "ROOK"
+board[7][0] = "ROOK"
+board[7][7] = "ROOK"
+board[4][2] = "KNIGHT"
+board[3][4] = "PAWN"
+print(board)
+==
+higest temp :: multidimentional array - 
+temps = [[0.0 for h in range(24)] for d in range(31)]
+#
+# The matrix is magically updated here.
+#
+ 
+highest = -100.0
+ 
+for day in temps:
+    for temp in day:
+        if temp > highest:
+            highest = temp
+ 
+print("The highest temperature was:", highest)
+==
+three dimentional array ::
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+==
+vacancy at 15th floor 3rd building ::
+vacancy = 0
+ 
+for room_number in range(20):
+    if not rooms[2][14][room_number]:
+        vacancy += 1
+===
+# A four-column/four-row table ‒ a two dimensional array (4x4)
+
+table = [[":(", ":)", ":(", ":)"],
+         [":)", ":(", ":)", ":)"],
+         [":(", ":)", ":)", ":("],
+         [":)", ":)", ":)", ":("]]
+
+print(table)
+print(table[0][0])  # outputs: ':('
+print(table[0][3])  # outputs: ':)'
+===
+cube ::
+cube = [[[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':(', 'x', 'x']],
+ 
+        [[':)', 'x', 'x'],
+         [':(', 'x', 'x'],
+         [':)', 'x', 'x']],
+ 
+        [[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':)', 'x', 'x']]]
+ 
+print(cube)
+print(cube[0][0][0])  # outputs: ':('
+print(cube[2][2][0])  # outputs: ':)'
+==\
