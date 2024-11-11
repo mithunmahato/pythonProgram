@@ -14,3 +14,44 @@ if __name__ == '__main__':
     for a,c in sorted(records):
         if c==b:
             print(a)
+==============================
+Sample Input 0
+
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+
+if __name__ == '__main__':
+    N = int(input())
+    liste = []
+    for i in range(N):
+        command = input()
+        critere = command.split(" ")[0]
+        
+        if critere == "insert":
+            [i, e] = command.split(" ")[1:]
+            liste.insert(int(i), int(e))
+        elif critere == "print":
+            print(liste)
+        elif critere == "remove":
+            liste.remove(int(command.split(" ")[1]))
+        elif critere == "append":
+            liste.append(int(command.split(" ")[1]))
+        elif critere == "sort":
+            liste.sort()
+        elif critere == "pop":
+            liste.pop()
+        elif critere == "reverse":
+            liste.reverse()
+
+======
